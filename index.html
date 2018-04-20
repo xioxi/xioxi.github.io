@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Motion</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!-- Pixel Fabric clothes icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/pixelfabric-clothes/style.css" />
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	 <!-- Flickity gallery styles -->
+	<link rel="stylesheet" type="text/css" href="css/flickity.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script async src="https://lk.easynetshop.ru/frontend/v3/ens-9964a68a.js"></script>
+<link href="https://lk.easynetshop.ru/frontend/v3/ens-9964a68a.css" rel="stylesheet">
+</head>
+<body>
+	<div class="bar">
+		<div class="filter">
+			<span class="filter__label">Filter: </span>
+			<button class="action filter__item filter__item--selected" data-filter="*">All</button>
+			<button class="action filter__item" data-filter=".nike"><i class="icon icon--nike"></i><span class="action__text">Nike</span></button>
+			<button class="action filter__item" data-filter=".adidas"><i class="icon icon--adidas"></i><span class="action__text">Adidas</span></button>
+			<button class="action filter__item" data-filter=".gucci"><i class="icon icon--gucci"></i><span class="action__text">Gucci</span></button>
+			<button class="action filter__item" data-filter=".puma"><i class="icon icon--puma"></i><span class="action__text">Puma</span></button>
+			<button class="action filter__item" data-filter=".vg"><i class="icon icon--vg"></i><span class="action__text">Valentino</span></button>
+			<button class="action filter__item" data-filter=".lacoste"><i class="icon icon--lacoste"></i><span class="action__text">Lacoste</span></button>
+	    </div>
+		<button class="cart">
+			<i class="cart__icon fa fa-shopping-cart"></i>
+			<span class="text-hidden">Shopping cart</span>
+			<span class="cart__count">0</span>
+		</button>
+	</div>
+	<!-- Main view -->
+	<div class="view">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<span><h1>Motion</h1><span class="bp-icon bp-icon-about" data-content="На цьому сайті представлені найновіші моделі одягу та аксесуари."></span></span>
+		</header>
+		<!-- Grid -->
+		<section class="grid grid--loading">
+			<!-- Loader -->
+			<img class="grid__loader" src="images/grid.svg" width="80" alt="Loader image" />
+			<!-- Grid sizer for a fluid Isotope (Masonry) layout -->
+			<div class="grid__sizer"></div>
+			<!-- Grid items -->
+			<div class="grid__item nike">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe0.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe1.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe2.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Nike Supreme 270</h3>
+					<span class="meta__brand">Розміри: 38 39 40 41</span>
+					<span class="meta__price">1300 UAH</span>
+				</div>
+				<a class="easynetshop-buy" rel="9964a68a64007">Купить</a>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item nike">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe5.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe4.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe3.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Nike Tempo Betta</h3>
+					<span class="meta__brand">Розміри: 40 41 42 43 44 45</span>
+					<span class="meta__price">1200 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item adidas">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe7.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe6.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe8.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Adidas Yeezy Sply370</h3>
+					<span class="meta__brand">Розміри: 41/42/43/44/45</span>
+					<span class="meta__price">750 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item gucci">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe9.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe10.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Gucci</h3>
+					<span class="meta__brand">Розміри:40 44</span>
+					<span class="meta__price">900 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item nike">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe11.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe12.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Nike ХДР</h3>
+					<span class="meta__brand">Розміри:40 41 42 43 44 45 </span>
+					<span class="meta__price">1150 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item--size-a nike">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe13.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe14.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe15.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Nike Tavas</h3>
+					<span class="meta__brand">Розміри:41 42 43 43</span>
+					<span class="meta__price">950 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item gucci">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe16.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe17.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe18.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Gucci</h3>
+					<span class="meta__brand">Розміри:41 42 43 43 44</span>
+					<span class="meta__price">1050 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item adidas">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe19.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe20.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe21.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Adidas Yeezy Wave Runner 700 Solid Grey</h3>
+					<span class="meta__brand">Розміри:41 42 43 43 44 45</span>
+					<span class="meta__price">1250 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item nike">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe22.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe23.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe24.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Nike Jordan Melo 13</h3>
+					<span class="meta__brand">Розміри:41 42 43 43 44 45</span>
+					<span class="meta__price">1300 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item gucci">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe27.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe26.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe25.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Gucci Ace Embroidered Sneaker</h3>
+					<span class="meta__brand">Розміри:39 40 41 42 43</span>
+					<span class="meta__price">1200 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item puma">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe28.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe29.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe30.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Puma Suede</h3>
+					<span class="meta__brand">Розміри:41 42 43 43 44 45</span>
+					<span class="meta__price">950 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item vg">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe31.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe32.lpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe33.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Valentino Garavani</h3>
+					<span class="meta__brand">Розміри:40 41 42 43 43 44</span>
+					<span class="meta__price">980 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item nike">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe34.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe35.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe36.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Nike Air Max 97</h3>
+					<span class="meta__brand">Розміри:41 42 43 43 44 45</span>
+					<span class="meta__price">850 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item adidas">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe37.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe38.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe39.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Adidas Yeezy SPLY 350 Boost V2</h3>
+					<span class="meta__brand">Розміри:40 41 42 43 43 44</span>
+					<span class="meta__price">1150 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid gucci">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe40.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe41.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe42.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Gucci</h3>
+					<span class="meta__brand">Розміри:40 41 42 43 43 44</span>
+					<span class="meta__price">980 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item adidas">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe43.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe44.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe45.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Adidas Sole Box</h3>
+					<span class="meta__brand">Розміри:41 42 43 44 45 46</span>
+					<span class="meta__price">850 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item adidas">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe46.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe47.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe48.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Adidas Gazelle</h3>
+					<span class="meta__brand">Розміри: 41 42 43 44 45 46</span>
+					<span class="meta__price">820 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item nike">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe49.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe50.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe51.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Nike Lunar Force</h3>
+					<span class="meta__brand">Розміри:40 41 42 43 43 44</span>
+					<span class="meta__price">850 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item nike">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe52.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe53.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe54.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Nike Jordan Super Fly</h3>
+					<span class="meta__brand">Розміри: 41 42 43 44 45</span>
+					<span class="meta__price">1450 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item adidas">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe55.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe56.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe57.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Adidas Superstar</h3>
+					<span class="meta__brand">Розміри:36 37 38 39 40 41 42 43 44 45</span>
+					<span class="meta__price">850 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item nike">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe58.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe59.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe60.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Nike Air Jordan 13</h3>
+					<span class="meta__brand">Розміри: 41 45</span>
+					<span class="meta__price">1400 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item nike">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe61.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe62.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe63.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">NIKE SB WINTER</h3>
+					<span class="meta__brand">Розміри:40 41 42 43 44</span>
+					<span class="meta__price">990 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid lacoste">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe64.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe65.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe66.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Lacoste</h3>
+					<span class="meta__brand">Розміри:40 41 42 43 44</span>
+					<span class="meta__price">650 UAH</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item adidas">
+				<div class="slider">
+					<div class="slider__item"><img src="images/shoe67.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe68.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/shoe69.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Adidas YEEZY 750 Boost </h3>
+					<span class="meta__brand">Розміри:40 41 42 43 44</span>
+					<span class="meta__price">1100</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+		</section>
+		<!-- /grid-->
+	</div>
+	<!-- /view -->
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/flickity.pkgd.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
